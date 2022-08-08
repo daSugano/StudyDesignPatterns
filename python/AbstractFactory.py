@@ -24,6 +24,9 @@ class Carry(Food):
 class CarryFactory(AbstractFactory):
     def cook(self):
         carry = Carry()
+        """
+        カレーを作る処理
+        """
         return carry
 
 
@@ -38,6 +41,9 @@ class Ramen(Food):
 class RamenFactory(AbstractFactory):
     def cook(self):
         ramen = Ramen()
+        """
+        ラーメンを作る処理
+        """
         return ramen
 
 
