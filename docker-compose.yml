@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  pydp:
+    build: ./df
+    container_name: 'pydp'
+    tty: true
+    volumes:
+      - .:/app/oop
