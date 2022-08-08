@@ -1,6 +1,17 @@
 import abc
 import enum
 
+"""
+Abstract Factory
+=======================================================
+カレーとラーメンを作る手順は異なる。
+しかし、Client側は、料理の種類分作り方を覚えるのではなく、
+cookというメソッドを呼び出すだけでどんな料理でも作れるようにしたい。
+それを実現するのがAbstractFactory。cookの中身は料理ごとに異なるが、
+Client側はそれを気にする必要はない。
+=======================================================
+"""
+
 
 class AbstractFactory(metaclass=abc.ABCMeta):
     @abc.abstractmethod
